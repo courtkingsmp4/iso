@@ -1,0 +1,39 @@
+/* Design tokens - spec section 4.2 / 4.8. Original ISO values; change here, nowhere else. */
+:root {
+  /* surfaces */
+  --bg: #0b0c10;
+  --surface: #15161b;
+  --surface-2: #1b1c23;
+  --line: #272830;
+
+  /* text */
+  --text: #efede8;
+  --muted: #8e9096;
+
+  /* accent + state */
+  --accent: #e5b84a;
+  --accent-ink: #14110a;
+  --good: #4fd27a;
+  --warn: #e5b84a;
+  --bad: #f1523c;
+
+  /* match palette (used from Phase 3) */
+  --you: #3ce6f0;
+  --them: #f1523c;
+  --lane: #3e0f2f;
+  --floor: #14151a;
+  --neon-a: #e0368a;
+  --neon-b: #b8ff63;
+
+  /* type */
+  --font-display: 'Bebas Neue', 'Barlow Condensed', Impact, 'Arial Narrow', sans-serif;
+  --font-ui: 'Barlow', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* shape + spacing (8 px base unit, spec 4.4) */
+  --u: 8px;
+  --radius: 4px;
+  --topbar-h: 56px;
+  --sidebar-w: 208px;
+  --focus: 0 0 0 2px var(--bg), 0 0 0 4px var(--accent);
+}

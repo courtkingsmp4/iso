@@ -1,0 +1,11 @@
+{
+  "name": "iso",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "PROJECT ISO - Phase 0 foundation. No runtime or dev dependencies.",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "test": "node tests/run.mjs"
+  }
+}

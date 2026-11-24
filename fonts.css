@@ -1,0 +1,9 @@
+/* Fonts (spec 4.3 [REC]): Bebas Neue for display, Barlow for UI. Both are free (SIL OFL).
+   Phase 0 uses local() so nothing is downloaded. To self-host, drop the .woff2 files into
+   assets/fonts/ and add  url('../assets/fonts/<file>.woff2') format('woff2')  after each local(). */
+@font-face { font-family: 'Bebas Neue'; font-style: normal; font-weight: 400; font-display: swap;
+  src: local('Bebas Neue'), local('BebasNeue-Regular'); }
+@font-face { font-family: 'Barlow'; font-style: normal; font-weight: 400; font-display: swap;
+  src: local('Barlow'), local('Barlow-Regular'); }
+@font-face { font-family: 'Barlow'; font-style: normal; font-weight: 600; font-display: swap;
+  src: local('Barlow SemiBold'), local('Barlow-SemiBold'); }

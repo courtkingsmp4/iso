@@ -1,0 +1,35 @@
+.btn {
+  appearance: none; border: 1px solid transparent; border-radius: var(--radius); cursor: pointer;
+  font: 600 15px/1 var(--font-ui); padding: 12px 20px; color: var(--text); background: var(--surface-2);
+  text-decoration: none; display: inline-block;
+}
+.btn:hover { filter: brightness(1.15); }
+.btn:active { transform: translateY(1px); }
+.btn-primary { background: var(--accent); color: var(--accent-ink); }
+.btn-outline { background: transparent; border-color: var(--accent); color: var(--accent); }
+.btn-row { display: flex; flex-wrap: wrap; gap: var(--u); }
+
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: calc(var(--u) * 3); }
+.panel > h2 { margin-bottom: calc(var(--u) * 2); }
+.panel > * + * { margin-top: calc(var(--u) * 2); }
+.panel .hint { color: var(--muted); font-size: 14px; margin-bottom: 0; }
+
+.kv { display: grid; grid-template-columns: max-content 1fr; gap: 6px calc(var(--u) * 3); margin: 0; }
+.kv dt { color: var(--muted); }
+.kv dd { margin: 0; font-variant-numeric: tabular-nums; }
+
+.field { display: grid; gap: 6px; }
+.field label { color: var(--muted); font-size: 14px; }
+.input {
+  background: var(--bg); color: var(--text); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 10px 12px; font: 400 16px var(--font-ui); width: 100%; max-width: 420px;
+}
+.input:focus-visible { border-color: var(--accent); }
+
+.bignum { font-family: var(--font-display); font-size: 64px; line-height: 1; color: var(--accent); font-variant-numeric: tabular-nums; }
+.badge { display: inline-block; padding: 2px 8px; border: 1px solid var(--line); border-radius: 999px; font-size: 13px; color: var(--muted); }
+.badge.good { color: var(--good); border-color: var(--good); }
+.badge.bad { color: var(--bad); border-color: var(--bad); }
+.badge.warn { color: var(--warn); border-color: var(--warn); }
+pre.out { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px; overflow-x: auto; margin: 0; color: var(--text); }
+.error-box { border: 1px solid var(--bad); border-radius: var(--radius); padding: calc(var(--u) * 3); }
